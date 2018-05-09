@@ -1,0 +1,194 @@
+% Sample use of nato-sto.cls
+% Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-avt-latex-template.git
+%
+% Developed by:
+%	Danish Patel and Carlo Scalo
+%	Compressible Flow and Acoustics Lab
+%	https://engineering.purdue.edu/~scalo/
+%	Purdue University, West Lafayette, IN 47907
+
+\documentclass{nato-sto}
+\usepackage{amsfonts,amssymb,amsmath,amscd,amsthm}
+\usepackage{upgreek}
+\usepackage{subfigure}
+\usepackage{subfigmat}
+\usepackage{fancyvrb}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{enumitem}
+
+% Chapter number, title and author information
+
+\setchapternumber{XX}	% the authors will be assigned a chapter number that goes in this field
+\setchaptername{Title of your contribution}		% will be converted to uppercase
+\classification{e.g. nato restricted} 			% classification of your report -- will appear as uppercase only
+%\classification{} 						% for unclassified reports, leave this field blank 
+\publicationreference{PUB REF NBR (e.g. STO-TR-IST-999)}	% assigned by the task group
+
+%% Call the following three commands as many times as necessary to consecutively list authors with
+%% different affiliations. Make sure to set name, affiliation, and country for each group of authors in
+%% the right order, or they will be printed incorrectly.
+\setauthorlist{Firstname Lastname 1, Firstname Lastname 2, and Firstname Lastname 3}
+\setauthoraffiliation{First 3 authors' affiliation without full address}
+\setauthorcountry{author 123 country}
+
+\setauthorlist{Firstname Lastname 4 and Firstname Lastname 5}
+\setauthoraffiliation{Next 2 authors' affiliation without full address}
+\setauthorcountry{author 45 country}
+
+% NOTE: Second, third, and fourth level section heading titlecasing is done using the "titlecaps" package found at
+%% https://ctan.org/pkg/titlecaps
+% which allows the definition of a list of words that can remain lowercase using the command,
+% \Addlcwords{for a is but and with of in as the etc on to if}.
+% This list can be reset at any time using \Resetlcwords and redefined by the user.
+% Subsequent invocations of \Addlcwords will append to the existing list
+
+\VerbatimFootnotes	% provided by fancyvrb package to allow verbatim environment in footnotes
+% =============================================================================
+\begin{document}
+
+\maketitle
+
+
+% =============================================================================
+\section{Introduction}
+
+Individual chapters don't begin with an abstract. Abstracts must be submitted separately from the manuscript/chapter. Begin each chapter directly with an introduction which is a numbered section. 
+
+\noindent The current document has been prepared in \LaTeX ~using the new \verb|nato-sto| class. This document is meant to serve as a template/working-example of the correct usage of this class. To auto-generate the title, headers, and footers in this document, the user needs to pass arguments to the following commands:
+
+\noindent {\verb|\setchapternumber|} : This is the chapter number that will be assigned to you by the task group.\\
+{\verb|\setchaptername|} : This is the title of your chapter. By default, the chapter name will be converted to uppercase. To override this, use the \verb|\lowercase| command, the usage of which has been demonstrated later in this document.\\
+{\verb|\classification|} : The classification type of your chapter. Appropriate values for classification are given in table~\ref{tab:classification_types}.\\
+{\verb|\publicationreference|} : Publication reference number (e.g. STO-TR-IST-999) that will be provided to you by the task group.\\
+{\verb|\setauthorlist|} : The verbatim list of authors that will appear under the chapter title. Set multiple times to have multiple authors that share the same affiliation listed. See for example the way authors have been set in the current example.\\
+{\verb|\setauthoraffiliation|} : The verbatim author affiliation \& address that will appear under the current author list. \\
+{\verb|\setauthorcountry|} : The country to which author(s) in the current author list belong
+
+% =============================================================================
+\section{First level section heading}	\label{sec:ref_sec1}
+
+Begin a new section (first level section) with the \verb|\section{<section_title>}| command. By default, your section heading will be converted to uppercase. To force a certain portion of a first level section heading to be lowercase (such as a chemical compound, eg. HCl, or NaBr), put it inside a\\
+\verb|\lowercase{<text_to_be_made_lowercase>}| \\
+within the section command. An example is provided in the next section's title.\footnote{This is a test for a long running footnote that spans multiple lines. Footnotes must be indented 0.25cm from the left margin with a further 0.25cm between the number and the next.}
+
+\clearpage
+
+\section{First level section heading with mixed \lowercase{case}}
+
+Begin a new subsection (second level section) with the \verb|\subsection<subsection_title>| command.
+
+\subsection{Citing other works (second level section heading)}
+
+You can cite a reference~\cite{Wu2009} using the \verb|\cite| command in conjunction with \verb|BibTex|. Set \verb|\bibliographystyle| to \verb|nato-sto| and link your \verb|.bib| file via the \verb|\bilbiography| command.
+
+%\subsection{\capitalizetitle{Including mathematical equations ( second level section heading )	}}
+\subsection{Including mathematical equations (second level section heading)	}
+
+Equations can be included via one of several math environments provided by \LaTeX, e.g. the \verb|equation| environment,
+\begin{equation}\label{eq:relativity}
+E = mc^2.
+\end{equation}
+For more details on mathematics environments/modes in \LaTeX, refer to \url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}. This is how you refer to an equation~\eqref{eq:relativity}.
+
+
+\subsection{Including ordered and unordered lists (second level section heading)}
+
+This section deals with ordered (numbered) and unordered (bullets/symbols) lists. To begin a subsubsection (third level section), use the \verb|\subsubsection| command.
+
+\subsubsection{Ordered lists (third level section heading)}
+
+Ordered lists can be generated using the \verb|enumerate| environment. 
+
+\begin{enumerate}
+\item item 1;
+	\begin{enumerate}
+		\item subitem a;
+		\begin{enumerate}
+			\item subsubitem i;
+			\item subsubitem i;
+		\end{enumerate}
+		\item subitem b;
+	\end{enumerate}
+\item item 2;
+\item item 3;
+\end{enumerate}
+
+\subsubsection{Unordered lists (third level section heading)}
+
+Unordered lists can be generated using the \verb|itemize| environment.
+
+\begin{itemize}
+\item level 1 - A. This is a long line to show that the hanging indent of unordered lists have been set to the correct specification.
+\item level 1 - B
+	\begin{itemize}
+		\item level 2 - a
+		\begin{itemize}
+			\item level 3 - aa
+			\item level 3 - bb
+		\end{itemize}
+		\item level 2 - b
+	\end{itemize}
+\item level 1 - C
+\end{itemize}
+
+\paragraph{Fourth level section heading}
+
+If needed, a fourth level section heading can be added with the \verb|\paragraph{<fourth_level_section_title>}| command.
+
+\newpage
+
+\subsection{Including tables in your text (second level section heading)}
+
+Include a table with the \verb|table| and \verb|tabular| environments. Captions of tables must go \emph{before} the table (unlike figures). Table~\ref{tab:classification_types} is an example of how tables can be included in your document. It has been placed in an unnumbered third level section, which can be started with the \verb|\subsubsection*{<title>}| command.
+
+\subsubsection*{Classification types}
+
+The \verb|\classification| command takes a text argument that must be picked from the following table that has been taken from \verb|author_notes.pdf|,
+
+\begin{table}[h!]
+\centering
+\caption{Security Classifications. Table Captions Go Above the Table and Are Title Case.} \label{tab:classification_types}
+\begin{tabular}{| c | c |}
+\hline
+{\bf ENGLISH} & {\bf FRENCH}\\
+\hline
+\multicolumn{2}{| c |}{UNCLASSIFIED/UNLIMITED*}\\
+\hline
+NATO UNCLASSIFIED & NATO SANS CLASSIFICATION\\
+\hline
+NATO RESTRICTED & NATO DIFFUSION RESTREINTE \\
+\hline
+NATO CONFIDENTIAL & NATO CONFIDENTIEL \\
+\hline
+NATO SECRET & NATO SECRET \\
+\hline
+\end{tabular}
+\end{table}
+\begin{center}
+{* {\footnotesize This classification does NOT need to appear in the headers and footers.
+	\footnote{To do so, leave the argument to \verb|classified| blank.} }}
+\end{center}
+
+\newpage
+
+\subsection{Including figures in your text (second level section heading)}
+
+Include a figure with the \verb|figure| environment. Reference a labelled figure (eg: figure~\ref{fig:figlabel}) from anywhere in the text with the \verb|\ref| command.
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.3\textwidth]{nato-rto_logo} 
+\end{center}
+\caption{Figure Captions Should be Added After the Figure and Are Title Case.}
+\label{fig:figlabel}
+\end{figure}
+
+% ===================================%
+%%%%%%%%% Bibliography %%%%%%%%%
+% ===================================%
+\bibliographystyle{nato-sto}
+\bibliography{references} % when using a BibTeX database -- and you should!
+
+\end{document}
+

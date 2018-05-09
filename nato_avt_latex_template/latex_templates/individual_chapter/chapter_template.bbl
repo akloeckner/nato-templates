@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{Wu2009}
+Wu, C.F.J. and Hamada, M.S., {\em Experiments: Planning, Analysis, and
+  Optimization\/}, Wiley Series in Probability and Statistics, John Wiley \&
+  Sons, Aug 2009.
+
+\end{thebibliography}
