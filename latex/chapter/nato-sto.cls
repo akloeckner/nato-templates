@@ -84,8 +84,9 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all fields
 %\fancyhead[RO,LE]{\bfseries\sffamily \@title\vspace{0.0002in}}
-\fancyhead[RO]{\begin{minipage}[b]{\textwidth - 1.2in}\flushright \bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
-\fancyhead[LE]{\begin{minipage}[b]{\textwidth - 1.2in}\bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
+
+\fancyhead[RO]{\begin{minipage}[b]{0.89\textwidth}\flushright \bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
+\fancyhead[LE]{\begin{minipage}[b]{0.89\textwidth}\bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
 \fancyhead[LO]{\includegraphics[width=0.91in]{nato-otan_logo}\vspace{0.0002in}}
 \fancyhead[RE]{\includegraphics[width=0.7in]{nato-sto_logo}\hspace{-0.35cm}\vspace{0.0002in}}
 \fancyfoot[LO,RE]{\bfseries\sffamily\footnotesize
