@@ -1,14 +1,10 @@
 % Definition of nato-sto.cls
-% Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-avt-latex-template.git
+% Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-templates.git
 %
 % Developed by:
 %	Danish Patel
 %	Purdue University
 %	West Lafayette, IN 47907
-% Credits:
-% 	Carlo Scalo
-%	Steven Schneider
-% 	Bil Kleb?
 
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
 \ProvidesClass{nato-sto}[2007/09/19 v1.3.3 NATO RTO MP papers or ENs (unofficial)]
@@ -88,7 +84,8 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all fields
 %\fancyhead[RO,LE]{\bfseries\sffamily \@title\vspace{0.0002in}}
-\fancyhead[RO,LE]{\bfseries\sffamily \rawchaptername \vspace{0.0002in}}
+\fancyhead[RO]{\begin{minipage}[b]{\textwidth - 1.2in}\flushright \bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
+\fancyhead[LE]{\begin{minipage}[b]{\textwidth - 1.2in}\bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
 \fancyhead[LO]{\includegraphics[width=0.91in]{nato-otan_logo}\vspace{0.0002in}}
 \fancyhead[RE]{\includegraphics[width=0.7in]{nato-sto_logo}\hspace{-0.35cm}\vspace{0.0002in}}
 \fancyfoot[LO,RE]{\bfseries\sffamily\footnotesize
