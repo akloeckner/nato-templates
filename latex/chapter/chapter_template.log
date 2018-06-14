@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 JUN 2018 18:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 JUN 2018 13:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -484,21 +484,21 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 (./chapter_template.aux)
 \openout1 = `chapter_template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -568,7 +568,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 46.
+Package hyperref Info: Link coloring ON on input line 52.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -578,9 +578,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 
 (./chapter_template.out) (./chapter_template.out)
 \@outlinefile=\write4
@@ -590,131 +590,131 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
 
-Overfull \hbox (17.89626pt too wide) in paragraph at lines 54--55
+Overfull \hbox (17.89626pt too wide) in paragraph at lines 60--61
 \OT1/ptm/m/n/10.95 Individual chap-ters don't be-gin with an ab-stract. Ab-stra
 cts must be sub-mit-ted sep-a-rately from the manuscript/chapter.
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 62.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 <nato-otan_logo.jpg, id=49, 146.5475pt x 73.27374pt>
 File: nato-otan_logo.jpg Graphic file (type jpg)
  <use nato-otan_logo.jpg>
-Package pdftex.def Info: nato-otan_logo.jpg used on input line 73.
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 79.
 (pdftex.def)             Requested size: 72.26953pt x 36.13475pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 73.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 79.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 79.
 
 <nato-sto_logo.png, id=50, 48.34114pt x 37.22267pt>
 File: nato-sto_logo.png Graphic file (type png)
  <use nato-sto_logo.png>
-Package pdftex.def Info: nato-sto_logo.png used on input line 73.
+Package pdftex.def Info: nato-sto_logo.png used on input line 79.
 (pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 79.
 
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <./nato-otan_logo.jpg> <./nato-sto_logo.png>]
 File: nato-sto_logo.png Graphic file (type png)
  <use nato-sto_logo.png>
-Package pdftex.def Info: nato-sto_logo.png used on input line 73.
+Package pdftex.def Info: nato-sto_logo.png used on input line 79.
 (pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
  [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lowercase' on input line 75.
+(hyperref)                removing `\lowercase' on input line 81.
 
 
-Overfull \hbox (18.01945pt too wide) in paragraph at lines 81--82
+Overfull \hbox (18.01945pt too wide) in paragraph at lines 87--88
 \OT1/ptm/m/n/10.95 You can cite a ref-er-ence [[]] us-ing the [][]\OT1/pcr/m/n/
 10.95 \cite []\OT1/ptm/m/n/10.95 com-mand in con-junc-tion with [][]\OT1/pcr/m/
 n/10.95 BibTex[]\OT1/ptm/m/n/10.95 . Set [][]\OT1/pcr/m/n/10.95 \bibliographyst
 yle
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 120.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 126.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
 File: nato-otan_logo.jpg Graphic file (type jpg)
 
 <use nato-otan_logo.jpg>
-Package pdftex.def Info: nato-otan_logo.jpg used on input line 131.
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 137.
 (pdftex.def)             Requested size: 65.76462pt x 32.8823pt.
  [3
 
 ]
-Overfull \hbox (43.08464pt too wide) in paragraph at lines 135--136
+Overfull \hbox (43.08464pt too wide) in paragraph at lines 141--142
 \OT1/ptm/m/n/10.95 If needed, a fourth level sec-tion head-ing can be added wit
 h the [][]\OT1/pcr/m/n/10.95 \paragraph{<fourth_level_section_title>}
  []
 
 File: nato-sto_logo.png Graphic file (type png)
 <use nato-sto_logo.png>
-Package pdftex.def Info: nato-sto_logo.png used on input line 137.
+Package pdftex.def Info: nato-sto_logo.png used on input line 143.
 (pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
  [4]
 File: nato-otan_logo.jpg Graphic file (type jpg)
  <use nato-otan_logo.jpg>
-Package pdftex.def Info: nato-otan_logo.jpg used on input line 171.
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 177.
 (pdftex.def)             Requested size: 65.76462pt x 32.8823pt.
  [5]
 <nato-rto_logo.png, id=100, 1018.80624pt x 495.8525pt>
 File: nato-rto_logo.png Graphic file (type png)
  <use nato-rto_logo.png>
-Package pdftex.def Info: nato-rto_logo.png used on input line 179.
+Package pdftex.def Info: nato-rto_logo.png used on input line 185.
 (pdftex.def)             Requested size: 146.56496pt x 71.33308pt.
 
 (./chapter_template.bbl)
 File: nato-sto_logo.png Graphic file (type png)
  <use nato-sto_logo.png>
-Package pdftex.def Info: nato-sto_logo.png used on input line 191.
+Package pdftex.def Info: nato-sto_logo.png used on input line 197.
 (pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
  [6 <./nato-rto_logo.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./chapter_template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `chapter_template.out' has not changed.
 (rerunfilecheck)             Checksum: 3A77441398B63C3CB3AFF0D79CBB1808;1001.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
  10800 strings out of 492995
  161393 string characters out of 6132704
- 288771 words of memory out of 5000000
+ 287766 words of memory out of 5000000
  14126 multiletter control sequences out of 15000+600000
  34561 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -729,7 +729,7 @@ f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on chapter_template.pdf (6 pages, 483916 bytes).
+Output written on chapter_template.pdf (6 pages, 483913 bytes).
 PDF statistics:
  145 PDF objects out of 1000 (max. 8388607)
  122 compressed objects within 2 object streams
