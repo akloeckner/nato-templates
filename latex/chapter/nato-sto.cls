@@ -2,7 +2,7 @@
 % Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-templates.git
 %
 % Developed by:
-%	Danish Patel and Carlo Scalo
+%	Carlo Scalo's Group
 %	Purdue University
 %	West Lafayette, IN 47907
 
@@ -17,6 +17,19 @@
 
 % use article class as base
 \LoadClass[letterpaper,twoside,11pt]{article}
+
+%The font changing commands are often determined by the document class itself.
+%Command             10pt    11pt    12pt
+%\tiny             		  5       6       6
+%\scriptsize         	7       8       8
+%\footnotesize       	8       9       10
+%\small              	9       10      10.95
+%\normalsize         10      10.95   12
+%\large              12      12      14.4
+%\Large              14.4    14.4    17.28
+%\LARGE              17.28   17.28   20.74
+%\huge               20.74   20.74   24.88
+%\Huge               24.88   24.88   24.88
 
 %%
 % page layout
@@ -70,7 +83,7 @@
   \rhead{\includegraphics[width=0.7in]{nato-sto_logo}\hspace{-0.35cm}\vspace{0.0002cm}}
   \lfoot{\bfseries\sffamily\footnotesize \@nato@sto@publication@reference}
   \rfoot{\bfseries\sffamily\footnotesize \@nato@sto@paper@number - \thepage}
-  \rfoot{\bfseries\sffamily\footnotesize\chapternumber\thepage}
+  \rfoot{\bfseries\sffamily\footnotesize\chapternumber~-~\thepage}
   \chead{\raisebox{2.5\baselineskip}%
                   {\bfseries\sffamily\small
                    \MakeUppercase{\@nato@sto@classification}}}
@@ -83,26 +96,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Chapter number and name commands
-\newcommand{\setchapternumber}[1]{\newcommand{\chapternumber}{#1~--~}\setrawchapternumber{#1}}
-\newcommand{\setchaptername}[1]{\title{Chapter \chapternumber \MakeUppercase{#1}} \setrawchaptername{#1}}
+\newcommand{\setchapternumber}[1]{\newcommand{\chapternumber}{#1}\setrawchapternumber{#1}}
+\newcommand{\setchaptername}[1]{\title{Chapter \chapternumber~-~\MakeUppercase{#1}} \setrawchaptername{#1}}
 \newcommand{\setrawchapternumber}[1]{\newcommand\rawchapternumber{#1}}
 \newcommand{\setrawchaptername}[1]{\newcommand\rawchaptername{\MakeUppercase{#1}}}
 \newcommand{\setrunningtitle}[1]{\newcommand\headerTitleSplit{#1}}
-\newcommand{\setNumberOfLinesForRunningTitle}[1]{
-    \begin{switch}{#1}
-        \case{1}{
+\newcommand{\setNumberOfLinesForRunningTitle}[1]{\newcommand\NumberOfLinesForRunningTitle{#1}}
 
-        }
-        \case{2}{
+% Usage: \outputRunningTitle{Number of Lines}{Actual Title}
+%             \outputRunningTitle{NumberOfLinesForRunningTitle}{\headerTitleSplit}
 
-        }
-        \case{3}{
-
-       }
-        \case{4}{
-
-        }
-    \end{switch}
+\newcommand{\outputRunningTitle}[2]{
+\begin{switch}{#1}
+\case{1}{#2}% default 11 pt
+\case{2}{#2}% default 11 pt
+\case{3}{{\small#2}}% switch to 10 pt
+\case{4}{{\footnotesize#2}}\end{switch}% switch to 9 pt
 }
 
 % nominal page style
@@ -111,11 +120,11 @@
 
 %% RO header
 \fancyhead[RO]{\begin{minipage}[b]{0.8\textwidth}\flushright \bfseries\sffamily 
-\headerTitleSplit
+\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit} % \headerTitleSplit
 \vspace{0.0502in}\end{minipage}}
 %% LE header
 \fancyhead[LE]{\begin{minipage}[b]{0.8\textwidth}\bfseries\sffamily 
-\headerTitleSplit
+\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit} % \headerTitleSplit
 \vspace{0.0502in}\end{minipage}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -124,7 +133,7 @@
 \fancyfoot[LO,RE]{\bfseries\sffamily\footnotesize
                   \@nato@sto@publication@reference}
 \fancyfoot[RO,LE]{\bfseries\sffamily\footnotesize
-                  \chapternumber\thepage}
+                   \chapternumber~-~\thepage} % how do I remove this dash?
 \fancyhead[C]{\raisebox{2.5\baselineskip}
                        {\bfseries\sffamily\small
                         \MakeUppercase{\@nato@sto@classification}}}
@@ -149,18 +158,20 @@
 % Colors
 \RequirePackage{xcolor}
 
-\definecolor{darkblue}{rgb}{0.0,0.0,0.5}
-\definecolor{natoblue}{rgb}{0.95,0.84,0.31}
+%\definecolor{darkblue}{rgb}{0.0,0.0,0.5}
+%\definecolor{natoblue}{rgb}{0.95,0.84,0.31} % Pantone # 128
+\definecolor{darknatoblue}{cmyk}{100,72,0,18}
+\definecolor{lightnatoblue}{cmyk}{80,35,0,0} 
 
 % Enable hyperlinks
 \RequirePackage[hyperfootnotes=false,
                 hyperfigures,
                 breaklinks,
                 colorlinks,
-                urlcolor=natoblue,
-                filecolor=natoblue,
+                urlcolor=lightnatoblue,
+                filecolor=lightnatoblue,
                 citecolor=black,
-                linkcolor=natoblue,
+                linkcolor=lightnatoblue,
                 pagecolor=black,
                 menucolor=black,
                 anchorcolor=black]{hyperref}
@@ -278,6 +289,7 @@
 \renewcommand\Large{\@setfontsize\Large{13pt}{18}}
 \newcommand\titlefontsize{\@setfontsize\LARGE{15pt}{21}}
 
+\setcounter{section}{-1}
 \renewcommand\thesection      {\rawchapternumber.\@arabic\c@section}
 %\renewcommand\thesubsection   {\thesubsection}
 
@@ -346,6 +358,7 @@
 % Caption font -- original from base/article.cls
 \renewcommand{\thefigure}{\rawchapternumber-\@arabic\c@figure}
 \renewcommand{\thetable}{\rawchapternumber-\@arabic\c@table}
+%\renewcommand{\caption}[1]{\caption{\capitalizetitle{#1}}}
 
 \RequirePackage{stringstrings}
 %\RequirePackage{titlesec}
@@ -370,6 +383,7 @@
 
 % Setting paragraph spacing
 \setlength{\parskip}{12pt}
+\setlength{\parindent}{0pt}
 %%
 % Insert NATO logo page if document has an odd number of pages --
 % adapted from Piet van Oostrum's fancyhdr documentation

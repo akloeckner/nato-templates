@@ -2,7 +2,7 @@
 % Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-templates.git
 %
 % Developed by:
-%	Danish Patel and Carlo Scalo
+%	Carlo Scalo's Group
 %	Purdue University
 %	West Lafayette, IN 47907
 
@@ -24,18 +24,26 @@
 \usepackage{lipsum}
 \usepackage{calc}
 
+%\let\oldcaption\caption %( https://tex.stackexchange.com/questions/47351/can-i-redefine-a-command-to-contain-itself ) 
+%\renewcommand{\caption}[1]{\MakeSentenceCase{\oldcaption{#1}}}
+
 % Chapter number, title and author information
 \setchapternumber{XX}	% the authors will be assigned a chapter number that goes in this field
-\setchaptername{Very Long Title of Your Very Long Contribution, Which Might Span Multiple Lines}
+\setchaptername{Very Long Title of Your Very Long Contribution, Which Might Span Multiple Lines (Up To Four) But Only Three In This Case}
 \setNumberOfLinesForRunningTitle{3} % In this example your running title is split over two lines
-\setrunningtitle{Very Long Title of Your Very \\ Long Contribution, Which Might Span Multiple Lines} 
+\setrunningtitle{Very Long Title of Your Very \\ Long Contribution, Which Might Span \\ Multiple Lines (Up To Four) But Only Three In This Case} 
 % Chapter Title :: Careful, the chapter title when appearing as a running title in the header, it may
 % 			    need to span over multiple lines with a (very) specific editorial criterion
 %                          Editorial rules regarding the running title are that the top line is always the shortest, with each 
 %                          following lines a little longer, with the bottom line being the longest. 
 
+% Set Figures and Table Captions to "Title Case"
+%\usepackage{stringstrings}
+%\usepackage{caption}
+\DeclareCaptionTextFormat{natocaptionformat}{\capitalizetitle{#1}}
+\captionsetup{textformat=natocaptionformat}
 
-%\newcommand{\headerTitleSplit}{CAREFUL, YOUR TITLE DID NOT MAKE IT THROUGH CORRECTLY TO THE HEADER}
+% The stringstrings package has a \capitalizetitle{} macro that does what you want. You need to define words that are not capitalised.
 
 %%%% ** Please don't edit this part
 
@@ -73,7 +81,6 @@
 \begin{document}
 
 \maketitle
-
 
 \section{Nomenclature}
 
@@ -163,7 +170,8 @@ Unordered lists can be generated using the \verb|itemize| environment.
 
 \paragraph{Fourth level section heading}
 
-If needed, a fourth level section heading can be added with the \verb|\paragraph{<fourth_level_section_title>}| command.
+If needed, a fourth level section heading can be added with the \\
+\verb|\paragraph{<fourth_level_section_title>}| command.
 
 In the following we will test the paragraph spacing, which should be set to 12 pt
 
@@ -185,7 +193,7 @@ The \verb|\classification| command takes a text argument that must be picked fro
 
 \begin{table}[h!]
 \centering
-\caption{Security Classifications. Table Captions Go Above the Table and Are Title Case.} \label{tab:classification_types}
+\caption{Security classifications. table captions Go above the table and are title case.} \label{tab:classification_types}
 \begin{tabular}{| c | c |}
 \hline
 {\bf ENGLISH} & {\bf FRENCH}\\
@@ -217,7 +225,7 @@ Include a figure with the \verb|figure| environment. Reference a labelled figure
 \begin{center}
 \includegraphics[width=0.3\textwidth]{nato-rto_logo} 
 \end{center}
-\caption{Figure Captions Should be Added After the Figure and Are Title Case.}
+\caption{Figure captions should be added after the figure and are title case.}
 \label{fig:figlabel}
 \end{figure}
 

@@ -5,7 +5,6 @@ In general look for emails with subject title: "Repository for NATO STO Template
 We often have chapter titles that consist of more than one line of text (sometimes up to 4 lines) because the standard is to never abbreviate titles – see attached examples.
  
 The rules are that the top line is always the shortest, with each following lines a little longer, with the bottom line being the longest. The text on the bottom line should always finish at least 2 centimetres away from the existing NATO or STO logo and should sit just above the rule.
-**** this is dealt with by setting the minipage width to 0.8\textwidth from the \fancyhead[RO] / \fancyhead[LE]
 
 The font sizes are as follows:
 
@@ -19,7 +18,9 @@ In terms of heading numbering, I noticed in the sample PDF provided that the NOM
  
 With regards to the page number in the footer, the dash is bigger than the one used in the STO MS Word Template (see attached).
  
-I also noticed that there was no paragraph spacing on pages 8-3 and 8-4 – there should be 12 pts of space between each paragraph. Also there should be NO indentation of 1st line of text in a paragraph. Examples of paragraphs, spacing and a caption can be seen in the PDF file attached.
+I also noticed that there was no paragraph spacing on pages 8-3 and 8-4 – there should be 12 pts of space between each paragraph. 
+
+Also there should be NO indentation of 1st line of text in a paragraph. Examples of paragraphs, spacing and a caption can be seen in the PDF file attached.
  
 With regards to URLs cited in text, these are always coloured NATO blue (Pantone # 128).
  
