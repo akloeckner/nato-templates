@@ -87,30 +87,23 @@
 \newcommand{\setchaptername}[1]{\title{Chapter \chapternumber \MakeUppercase{#1}} \setrawchaptername{#1}}
 \newcommand{\setrawchapternumber}[1]{\newcommand\rawchapternumber{#1}}
 \newcommand{\setrawchaptername}[1]{\newcommand\rawchaptername{\MakeUppercase{#1}}}
+\newcommand{\setrunningtitle}[1]{\newcommand\headerTitleSplit{#1}}
+\newcommand{\setNumberOfLinesForRunningTitle}[1]{
+    \begin{switch}{#1}
+        \case{1}{
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        }
+        \case{2}{
 
-% Handling line numbers
-\newcommand{\TitleLineONE}{}
-\newcommand{\TitleLineTWO}{}
-\newcommand{\TitleLineTHREE}{}
-\newcommand{\TitleLineFOUR}{}
-\newcommand{\setTitleLineONE}[1]{
-	\renewcommand{\TitleLineONE}{#1}
-	}
-\newcommand{\setTitleLineTWO}[1]{
-	\renewcommand{\TitleLineTWO}{#1}
-	}
-\newcommand{\setTitleLineTHREE}[1]{
-	\renewcommand{\TitleLineTHREE}{#1}
+        }
+        \case{3}{
+
+       }
+        \case{4}{
+
+        }
+    \end{switch}
 }
-\newcommand{\setTitleLineFOUR}[1]{
-	\renewcommand{\TitleLineFOUR}{#1}
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % nominal page style
 \pagestyle{fancy}

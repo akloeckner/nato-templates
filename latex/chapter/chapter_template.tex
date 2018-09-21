@@ -26,43 +26,16 @@
 
 % Chapter number, title and author information
 \setchapternumber{XX}	% the authors will be assigned a chapter number that goes in this field
-
-% Chapter Title :: Careful, the chapter title when appearing as a running title in the header, it may
-% 			    need to span over multiple lines with a specific editorial criteria
 \setchaptername{Very Long Title of Your Very Long Contribution, Which Might Span Multiple Lines}
+\setNumberOfLinesForRunningTitle{3} % In this example your running title is split over two lines
+\setrunningtitle{Very Long Title of Your Very \\ Long Contribution, Which Might Span Multiple Lines} 
+% Chapter Title :: Careful, the chapter title when appearing as a running title in the header, it may
+% 			    need to span over multiple lines with a (very) specific editorial criterion
+%                          Editorial rules regarding the running title are that the top line is always the shortest, with each 
+%                          following lines a little longer, with the bottom line being the longest. 
 
-% Editorial rules regarding the running title are that the top line is always the shortest, with each 
-% following lines a little longer, with the bottom line being the longest. 
-
-% Please decide to spread out the title over 1, 2, 3 or 4 lines (at most) below
-%\setNumberOfLinesForRunningTitle{2} 
-\setTitleLineONE{Very Long Title of Your Very}   						% line ONE should be shorter than line TWO
-\setTitleLineTWO{Long Contribution, Which Might Span Multiple Lines}		% line TWO should be shorter than line THREE     <-- this line will be ignored
-\setTitleLineTHREE{}											% line THREE should be shorter than line FOUR
-\setTitleLineFOUR{}
-\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO}
 
 %\newcommand{\headerTitleSplit}{CAREFUL, YOUR TITLE DID NOT MAKE IT THROUGH CORRECTLY TO THE HEADER}
-
-
-
-%\newcommand{\setNumberOfLinesForRunningTitle}[1]{
-    \begin{switch}{3}
-        \case{1}{
-\newcommand{\headerTitleSplit}{\TitleLineONE}
-        }
-        \case{2}{
-\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO}
-        }
-        \case{3}{
-\renewcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO \\ 	\TitleLineTHREE}
-       }
-        \case{4}{
-\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO \\ 	\TitleLineTHREE \\ \TitleLineFOUR}
-        }
-    \end{switch}
-%}
-
 
 %%%% ** Please don't edit this part
 
