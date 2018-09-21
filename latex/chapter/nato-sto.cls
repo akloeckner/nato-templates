@@ -2,7 +2,7 @@
 % Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-templates.git
 %
 % Developed by:
-%	Danish Patel
+%	Danish Patel and Carlo Scalo
 %	Purdue University
 %	West Lafayette, IN 47907
 
@@ -38,7 +38,7 @@
 % image search path
 \graphicspath{{graphics/}}
 
-%%
+
 % page header/footer
 \RequirePackage{fancyhdr}
 
@@ -80,51 +80,98 @@
                    \MakeUppercase{\@nato@sto@classification}}}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Chapter number and name commands
+\newcommand{\setchapternumber}[1]{\newcommand{\chapternumber}{#1~--~}\setrawchapternumber{#1}}
+\newcommand{\setchaptername}[1]{\title{Chapter \chapternumber \MakeUppercase{#1}} \setrawchaptername{#1}}
+\newcommand{\setrawchapternumber}[1]{\newcommand\rawchapternumber{#1}}
+\newcommand{\setrawchaptername}[1]{\newcommand\rawchaptername{\MakeUppercase{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Handling line numbers
+\newcommand{\TitleLineONE}{}
+\newcommand{\TitleLineTWO}{}
+\newcommand{\TitleLineTHREE}{}
+\newcommand{\TitleLineFOUR}{}
+\newcommand{\setTitleLineONE}[1]{
+	\renewcommand{\TitleLineONE}{#1}
+	}
+\newcommand{\setTitleLineTWO}[1]{
+	\renewcommand{\TitleLineTWO}{#1}
+	}
+\newcommand{\setTitleLineTHREE}[1]{
+	\renewcommand{\TitleLineTHREE}{#1}
+}
+\newcommand{\setTitleLineFOUR}[1]{
+	\renewcommand{\TitleLineFOUR}{#1}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 % nominal page style
 \pagestyle{fancy}
 \fancyhf{} % clear all fields
-%\fancyhead[RO,LE]{\bfseries\sffamily \@title\vspace{0.0002in}}
 
-\fancyhead[RO]{\begin{minipage}[b]{0.8\textwidth}\flushright \bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
-\fancyhead[LE]{\begin{minipage}[b]{0.8\textwidth}\bfseries\sffamily \rawchaptername \vspace{0.0502in}\end{minipage}}
+%% RO header
+\fancyhead[RO]{\begin{minipage}[b]{0.8\textwidth}\flushright \bfseries\sffamily 
+\headerTitleSplit
+\vspace{0.0502in}\end{minipage}}
+%% LE header
+\fancyhead[LE]{\begin{minipage}[b]{0.8\textwidth}\bfseries\sffamily 
+\headerTitleSplit
+\vspace{0.0502in}\end{minipage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \fancyhead[LO]{\includegraphics[width=0.91in]{nato-otan_logo}\vspace{0.0002in}}
 \fancyhead[RE]{\includegraphics[width=0.7in]{nato-sto_logo}\hspace{-0.35cm}\vspace{0.0002in}}
 \fancyfoot[LO,RE]{\bfseries\sffamily\footnotesize
                   \@nato@sto@publication@reference}
 \fancyfoot[RO,LE]{\bfseries\sffamily\footnotesize
                   \chapternumber\thepage}
-\fancyhead[C]{\raisebox{2.5\baselineskip}%
+\fancyhead[C]{\raisebox{2.5\baselineskip}
                        {\bfseries\sffamily\small
                         \MakeUppercase{\@nato@sto@classification}}}
-\fancyfoot[C]{\raisebox{-1.75\baselineskip}%
+\fancyfoot[C]{\raisebox{-1.75\baselineskip}
                        {\bfseries\sffamily\small
                         \MakeUppercase{\@nato@sto@classification}}}
+%% Legend for letters
+% E: Even page
+% O: Odd page
+% L: Left field
+% C: Center field
+% R: Right field
+% H: Header
+% F: Footer
 
-%%
+
+
 % Use required font
 \RequirePackage{times}
 
 %%
 % Colors
-\RequirePackage{color}
+\RequirePackage{xcolor}
 
 \definecolor{darkblue}{rgb}{0.0,0.0,0.5}
+\definecolor{natoblue}{rgb}{0.95,0.84,0.31}
 
-%%
 % Enable hyperlinks
 \RequirePackage[hyperfootnotes=false,
                 hyperfigures,
                 breaklinks,
                 colorlinks,
-                urlcolor=darkblue,
-                filecolor=darkblue,
+                urlcolor=natoblue,
+                filecolor=natoblue,
                 citecolor=black,
-                linkcolor=black,
+                linkcolor=natoblue,
                 pagecolor=black,
                 menucolor=black,
                 anchorcolor=black]{hyperref}
 
-%%
 % Citations
 \RequirePackage[numbers,sort&compress]{natbib}
 \RequirePackage{hypernat}
@@ -143,7 +190,7 @@
     \global\@topnum\z@
     \@maketitle
     \thispagestyle{plain}\@thanks
-    \enlargethispage{-2cm}% reserve space NATO-sto publication footnote
+%    \enlargethispage{-2cm}% reserve space NATO-sto publication footnote
   \endgroup
   \setcounter{footnote}{0}%
   \global\let\thanks\relax
@@ -178,13 +225,6 @@
 \renewenvironment{abstract}%
   {\section*{\itshape\MakeUppercase\abstractname}\itshape}%
   {\vskip 1em}
-
-% Chapter number and name commands
-\newcommand{\setchapternumber}[1]{\newcommand{\chapternumber}{#1~--~}\setrawchapternumber{#1}}
-\newcommand{\setchaptername}[1]{\title{Chapter \chapternumber \MakeUppercase{#1}} \setrawchaptername{#1}}
-\newcommand{\setrawchapternumber}[1]{\newcommand\rawchapternumber{#1}}
-\newcommand{\setrawchaptername}[1]{\newcommand\rawchaptername{\MakeUppercase{#1}}}
-%%%
 
 % Author name settings --- need to expand to multiple authors
 \newcounter{numauthors}		% This counter keeps track of how many authors have been added
@@ -237,8 +277,6 @@
 
 %%%%%%%%%%%%%%
 
-
-%%
 % Section headers -- modifying those from base/article.cls
 
 \RequirePackage{titlecaps}
@@ -337,8 +375,8 @@
 \deffootnote[0.65cm]{0.65cm}{0em}{\textsuperscript{\thefootnotemark}\hspace{0.25cm}}
 
 
-
-
+% Setting paragraph spacing
+\setlength{\parskip}{12pt}
 %%
 % Insert NATO logo page if document has an odd number of pages --
 % adapted from Piet van Oostrum's fancyhdr documentation

@@ -2,23 +2,70 @@
 % Clone from: https://github.rcac.purdue.edu/CarloScaloGroup/nato-templates.git
 %
 % Developed by:
-%	Danish Patel & Carlo Scalo
+%	Danish Patel and Carlo Scalo
 %	Purdue University
 %	West Lafayette, IN 47907
 
 \documentclass{nato-sto}
+
 \usepackage{amsfonts,amssymb,amsmath,amscd,amsthm}
 \usepackage{upgreek}
+\usepackage{xifthen}
+\usepackage{xifthen}
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+
 \usepackage{subfig}
 \usepackage{fancyvrb}
 \usepackage{graphicx}
 \usepackage{pifont}
 \usepackage{enumitem}
+\usepackage{lipsum}
+\usepackage{calc}
 
 % Chapter number, title and author information
-
 \setchapternumber{XX}	% the authors will be assigned a chapter number that goes in this field
-\setchaptername{Very Long Title of Your Very Long Contribution Which Might Span Multiple Lines}		% will be converted to uppercase
+
+% Chapter Title :: Careful, the chapter title when appearing as a running title in the header, it may
+% 			    need to span over multiple lines with a specific editorial criteria
+\setchaptername{Very Long Title of Your Very Long Contribution, Which Might Span Multiple Lines}
+
+% Editorial rules regarding the running title are that the top line is always the shortest, with each 
+% following lines a little longer, with the bottom line being the longest. 
+
+% Please decide to spread out the title over 1, 2, 3 or 4 lines (at most) below
+%\setNumberOfLinesForRunningTitle{2} 
+\setTitleLineONE{Very Long Title of Your Very}   						% line ONE should be shorter than line TWO
+\setTitleLineTWO{Long Contribution, Which Might Span Multiple Lines}		% line TWO should be shorter than line THREE     <-- this line will be ignored
+\setTitleLineTHREE{}											% line THREE should be shorter than line FOUR
+\setTitleLineFOUR{}
+\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO}
+
+%\newcommand{\headerTitleSplit}{CAREFUL, YOUR TITLE DID NOT MAKE IT THROUGH CORRECTLY TO THE HEADER}
+
+
+
+%\newcommand{\setNumberOfLinesForRunningTitle}[1]{
+    \begin{switch}{3}
+        \case{1}{
+\newcommand{\headerTitleSplit}{\TitleLineONE}
+        }
+        \case{2}{
+\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO}
+        }
+        \case{3}{
+\renewcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO \\ 	\TitleLineTHREE}
+       }
+        \case{4}{
+\newcommand{\headerTitleSplit}{\TitleLineONE 	 \\ \TitleLineTWO \\ 	\TitleLineTHREE \\ \TitleLineFOUR}
+        }
+    \end{switch}
+%}
+
+
+%%%% ** Please don't edit this part
+
 \classification{NATO UNCLASSIFIED} 			% classification of your report -- will appear as uppercase only
 % Possibile Classifications (in English) are:
 % UNCLASSIFIED/UNLIMITED ** this allows distribution to all nations, if you elect this please leave classification field blank
@@ -49,10 +96,15 @@
 
 \VerbatimFootnotes	% provided by fancyvrb package to allow verbatim environment in footnotes
 % =============================================================================
+
 \begin{document}
 
 \maketitle
 
+
+\section{Nomenclature}
+
+If you have a Nomenclature, it should be numbered, like the other sections below.
 
 % =============================================================================
 \section{Introduction}
@@ -93,7 +145,7 @@ Equations can be included via one of several math environments provided by \LaTe
 \begin{equation}\label{eq:relativity}
 E = mc^2.
 \end{equation}
-For more details on mathematics environments/modes in \LaTeX, refer to \url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}. This is how you refer to an equation~\eqref{eq:relativity}.
+For more details on mathematics environments/modes in \LaTeX, refer to \url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}. This is how you refer to an equation~\eqref{eq:relativity}. Also, hyperlinks in the text should be displayed in NATO blue 
 
 
 \subsection{Including ordered and unordered lists (second level section heading)}
@@ -139,6 +191,14 @@ Unordered lists can be generated using the \verb|itemize| environment.
 \paragraph{Fourth level section heading}
 
 If needed, a fourth level section heading can be added with the \verb|\paragraph{<fourth_level_section_title>}| command.
+
+In the following we will test the paragraph spacing, which should be set to 12 pt
+
+\lipsum[1]
+
+\lipsum[2]
+
+\lipsum[3]
 
 \newpage
 
@@ -187,6 +247,10 @@ Include a figure with the \verb|figure| environment. Reference a labelled figure
 \caption{Figure Captions Should be Added After the Figure and Are Title Case.}
 \label{fig:figlabel}
 \end{figure}
+
+\section{Acknowledgements}
+
+Acknowledgements should also be numbered, like other sections.
 
 % ===================================%
 %%%%%%%%% Bibliography %%%%%%%%%

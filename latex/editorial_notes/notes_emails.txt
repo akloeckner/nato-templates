@@ -1,0 +1,64 @@
+In general look for emails with subject title: "Repository for NATO STO Templates:
+
+##########################
+
+We often have chapter titles that consist of more than one line of text (sometimes up to 4 lines) because the standard is to never abbreviate titles – see attached examples.
+ 
+The rules are that the top line is always the shortest, with each following lines a little longer, with the bottom line being the longest. The text on the bottom line should always finish at least 2 centimetres away from the existing NATO or STO logo and should sit just above the rule.
+**** this is dealt with by setting the minipage width to 0.8\textwidth from the \fancyhead[RO] / \fancyhead[LE]
+
+The font sizes are as follows:
+
+·         1 to 2 lines of heading text = Arial Bold 11 pt
+
+·         3 lines of heading text = Arial Bold 10 pt
+
+·         4 lines of text = Arial Bold 8 or 9 pt (depending on the length of the chapter title)
+ 
+In terms of heading numbering, I noticed in the sample PDF provided that the NOMENCLATURE heading was not numbered (and it should be) – if this was Chapter 8, then it should be numbered “8.0”. In addition, the ACKNOWLEDGMENTS heading should also be numbered.
+ 
+With regards to the page number in the footer, the dash is bigger than the one used in the STO MS Word Template (see attached).
+ 
+I also noticed that there was no paragraph spacing on pages 8-3 and 8-4 – there should be 12 pts of space between each paragraph. Also there should be NO indentation of 1st line of text in a paragraph. Examples of paragraphs, spacing and a caption can be seen in the PDF file attached.
+ 
+With regards to URLs cited in text, these are always coloured NATO blue (Pantone # 128).
+ 
+Finally, as I mentioned before, figure and table captions should be ‘Title’ Case and not ‘Sentence’ Case.
+
+##########################
+
+
+Dear Kelly,
+
+Good to know that there is no need to use abbreviated titles for the headers. Thanks!
+
+Regards,
+
+Stefan
+
+
+##########################
+
+Dear Dr. Scalo,
+ 
+Title case is when the first letter of all major words is capitalised … for example: Figure 1-1: A Map of the Provinces in the Country of Canada. Sentence case is when only the first letter of the first word is capitalised (unless it is a proper noun) … for example: Figure 1-1: A map of the provinces in the country of Canada.
+ 
+Best regards,
+ 
+Kelly
+
+##############################
+
+Hi Carlo,
+
+I could get rid of the 'too much white space at the bottom of the page' (see Kelly's comments) by removing the command '\enlargethispage{-2cm}' in nato-sto.cls, line 146.
+
+Our chapter 8 is not affected by Kelly's general comment that the figure and table captions should be 'Arial Bold 9 pt'. So I didn't have to worry about this 'issue' in our AVT 240 version. However, now I remember again that using the 'subfig' package did have some unwanted/unexpected side effects last year when working on the Scitech 2018 version. Obviously, I had added a comment last autumn about this side effect when loading the subfig package needed for the input of one of my co-authors:
+
+\usepackage[caption=false]{subfig}  % triggers bold figure caption with smaller font
+
+Maybe some commands from this package can be used as a basis for implementing the requested change of fonts for the captions.
+
+Regards,
+
+Stefan
