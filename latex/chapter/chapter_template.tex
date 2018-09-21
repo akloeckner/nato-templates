@@ -11,7 +11,6 @@
 \usepackage{amsfonts,amssymb,amsmath,amscd,amsthm}
 \usepackage{upgreek}
 \usepackage{xifthen}
-\usepackage{xifthen}
 \newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
 \newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite...
 \newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
@@ -38,10 +37,8 @@
 %                          following lines a little longer, with the bottom line being the longest. 
 
 % Set Figures and Table Captions to "Title Case"
-%\usepackage{stringstrings}
-%\usepackage{caption}
-\DeclareCaptionTextFormat{natocaptionformat}{\capitalizetitle{#1}}
-\captionsetup{textformat=natocaptionformat}
+% \DeclareCaptionTextFormat{natocaptionformat}{\capitalizetitle{#1}} --> this doesn't work with in-text citations or equations so we have to manually adopt \capitalizetitle{} in the captions
+% \captionsetup{textformat=natocaptionformat}
 
 % The stringstrings package has a \capitalizetitle{} macro that does what you want. You need to define words that are not capitalised.
 
@@ -193,7 +190,7 @@ The \verb|\classification| command takes a text argument that must be picked fro
 
 \begin{table}[h!]
 \centering
-\caption{Security classifications. table captions Go above the table and are title case.} \label{tab:classification_types}
+\caption{\capitalizetitle{Security classifications. table captions Go above the table and are title case. Careful when including equations such as } $E=m\,c^2$ As They Have To Be Outside Of The Capitalize Environment.} \label{tab:classification_types}
 \begin{tabular}{| c | c |}
 \hline
 {\bf ENGLISH} & {\bf FRENCH}\\
@@ -225,7 +222,7 @@ Include a figure with the \verb|figure| environment. Reference a labelled figure
 \begin{center}
 \includegraphics[width=0.3\textwidth]{nato-rto_logo} 
 \end{center}
-\caption{Figure captions should be added after the figure and are title case.}
+\caption{\capitalizetitle{Figure captions should be added after the figure and are title case.}}
 \label{fig:figlabel}
 \end{figure}
 
