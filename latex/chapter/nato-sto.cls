@@ -120,11 +120,11 @@
 
 %% RO header
 \fancyhead[RO]{\begin{minipage}[b]{0.8\textwidth}\flushright \bfseries\sffamily 
-\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit} % \headerTitleSplit
+\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit}%\headerTitleSplit
 \vspace{0.0502in}\end{minipage}}
 %% LE header
 \fancyhead[LE]{\begin{minipage}[b]{0.8\textwidth}\bfseries\sffamily 
-\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit} % \headerTitleSplit
+\outputRunningTitle{\NumberOfLinesForRunningTitle}{\headerTitleSplit}%\headerTitleSplit
 \vspace{0.0502in}\end{minipage}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
