@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 SEP 2018 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  16 OCT 2018 23:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -736,15 +736,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
  (./chapter_template.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
-Package rerunfilecheck Info: File `chapter_template.out' has not changed.
-(rerunfilecheck)             Checksum: 051215FEC50AC788FAA3C3356BB845A8;1101.
+
+
+Package rerunfilecheck Warning: File `chapter_template.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `chapter_template.out':
+(rerunfilecheck)             Before: 613A6A82F1A2108913B6DDAA7063DAA0;1269
+(rerunfilecheck)             After:  051215FEC50AC788FAA3C3356BB845A8;1101.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
- 11546 strings out of 492995
- 170577 string characters out of 6132704
+ 11547 strings out of 492995
+ 170587 string characters out of 6132704
  399529 words of memory out of 5000000
- 14853 multiletter control sequences out of 15000+600000
+ 14854 multiletter control sequences out of 15000+600000
  33464 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,15n,54p,419b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -758,7 +768,7 @@ f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on chapter_template.pdf (6 pages, 488386 bytes).
+Output written on chapter_template.pdf (6 pages, 488397 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  131 compressed objects within 2 object streams
