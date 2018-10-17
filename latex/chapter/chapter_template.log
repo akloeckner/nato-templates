@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.5.23)  17 OCT 2018 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  17 OCT 2018 13:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -69,11 +69,18 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
-JK)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
@@ -99,8 +106,9 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -119,8 +127,8 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
@@ -136,10 +144,9 @@ Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
@@ -163,13 +170,13 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen113
-\Hy@linkcounter=\count90
-\Hy@pagecounter=\count91
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count92
+\Hy@SavedSpaceFactor=\count93
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -189,14 +196,14 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count93
+\c@Hy@tempcnt=\count94
 (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen114
-\Fld@menulength=\count94
+\Fld@menulength=\count95
 \Field@Width=\dimen115
 \Fld@charsize=\dimen116
 Package hyperref Info: Hyper figures ON on input line 6356.
@@ -208,36 +215,21 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count95
-\c@Item=\count96
+\Hy@abspage=\count96
+\c@Item=\count97
 )
 
-Package hyperref Message: Driver (autodetected): hxetex.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2017/03/14 v6.85a Hyperref driver for XeTeX
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/stringenc.sty
-Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
-)
-)
-\pdfm@box=\box26
-\c@Hy@AnnotLevel=\count97
-\HyField@AnnotCount=\count98
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+(/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
-(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
-
-(rerunfilecheck)             Therefore file contents cannot be checked efficien
-tly
-(rerunfilecheck)             and the loading of the package is aborted.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
 )
 \Hy@SectionHShift=\skip52
 )
@@ -246,16 +238,14 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count101
+\c@NAT@ctr=\count100
 )
 (./hypernat.sty
-Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 24 replaced by U+FFFD.
 Package: hypernat 2001/07/09 v1.0b hyperref and natbib compatibility (jb)
 )
-\c@numauthors=\count102
-\c@numaffil=\count103
-\c@numcountry=\count104
+\c@numauthors=\count101
+\c@numaffil=\count102
+\c@numcountry=\count103
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/forloop/forloop.sty
 Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
@@ -263,7 +253,7 @@ Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
-\c@authorloopcounter=\count105
+\c@authorloopcounter=\count104
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/titlecaps/titlecaps.sty
 Package: titlecaps 2015/01/30 V1.2 Routines for setting rich-text input into Ti
@@ -272,50 +262,50 @@ tling Caps
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ifnextok/ifnextok.sty
 Package: ifnextok 2011/06/27 v0.3 test next token (UL)
 )
-\c@lcword@index=\count106
-\c@word@count=\count107
-\c@lc@words=\count108
-\c@dia@count=\count109
-\c@arg@@@index=\count110
+\c@lcword@index=\count105
+\c@word@count=\count106
+\c@lc@words=\count107
+\c@dia@count=\count108
+\c@arg@@@index=\count109
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip55
 \enit@outerparindent=\dimen117
 \enit@toks=\toks16
-\enit@inbox=\box27
-\enitdp@description=\count111
+\enit@inbox=\box26
+\enitdp@description=\count110
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/stringstrings/stringstrings.sty
 Package: stringstrings 2015/02/02 v1.23 Extensive array of string manipulation 
 routines for cosmetic and programming application
-\c@@letterindex=\count112
-\c@@@letterindex=\count113
-\c@@@@letterindex=\count114
-\c@@wordindex=\count115
-\c@@iargc=\count116
-\c@@gobblesize=\count117
-\c@@maxrotation=\count118
-\c@@stringsize=\count119
-\c@@@stringsize=\count120
-\c@@@@stringsize=\count121
-\c@@revisedstringsize=\count122
-\c@@gobbleindex=\count123
-\c@@charsfound=\count124
-\c@@alph=\count125
-\c@@alphaindex=\count126
-\c@@capstrigger=\count127
-\c@@fromindex=\count128
-\c@@toindex=\count129
-\c@@previousindex=\count130
-\c@@flag=\count131
-\c@@matchloc=\count132
-\c@@matchend=\count133
-\c@@matchsize=\count134
-\c@@matchmax=\count135
-\c@@skipped=\count136
-\c@@lcwords=\count137
-\c@@@matchloc=\count138
+\c@@letterindex=\count111
+\c@@@letterindex=\count112
+\c@@@@letterindex=\count113
+\c@@wordindex=\count114
+\c@@iargc=\count115
+\c@@gobblesize=\count116
+\c@@maxrotation=\count117
+\c@@stringsize=\count118
+\c@@@stringsize=\count119
+\c@@@@stringsize=\count120
+\c@@revisedstringsize=\count121
+\c@@gobbleindex=\count122
+\c@@charsfound=\count123
+\c@@alph=\count124
+\c@@alphaindex=\count125
+\c@@capstrigger=\count126
+\c@@fromindex=\count127
+\c@@toindex=\count128
+\c@@previousindex=\count129
+\c@@flag=\count130
+\c@@matchloc=\count131
+\c@@matchend=\count132
+\c@@matchsize=\count133
+\c@@matchmax=\count134
+\c@@skipped=\count135
+\c@@lcwords=\count136
+\c@@@matchloc=\count137
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/koma-script/scrextend.sty
 Package: scrextend 2017/04/13 v3.23 KOMA-Script package (extend other classes w
@@ -368,30 +358,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count139
+\inf@bad=\count138
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count140
-\leftroot@=\count141
+\uproot@=\count139
+\leftroot@=\count140
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count142
-\DOTSCASE@=\count143
+\classnum@=\count141
+\DOTSCASE@=\count142
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+\Mathstrutbox@=\box27
+\strutbox@=\box28
 \big@size=\dimen120
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count144
-\c@MaxMatrixCols=\count145
+\macc@depth=\count143
+\c@MaxMatrixCols=\count144
 \dotsspace@=\muskip11
-\c@parentequation=\count146
-\dspbrk@lvl=\count147
+\c@parentequation=\count145
+\dspbrk@lvl=\count146
 \tag@help=\toks19
-\row@=\count148
-\column@=\count149
-\maxfields@=\count150
+\row@=\count147
+\column@=\count148
+\maxfields@=\count149
 \andhelp@=\toks20
 \eqnshift@=\dimen121
 \alignsep@=\dimen122
@@ -437,15 +427,15 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count151
-\calc@Bcount=\count152
+\calc@Acount=\count150
+\calc@Bcount=\count151
 \calc@Adimen=\dimen130
 \calc@Bdimen=\dimen131
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count153
+\calc@Ccount=\count152
 \calc@Cskip=\skip64
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
@@ -479,20 +469,20 @@ Package caption Info: \@makecaption = \long macro:#1#2->\sbox \@tempboxa {\foot
 notesize \bfseries \sffamily #1: #2}\ifdim \wd \@tempboxa > \hsize \footnotesiz
 e \bfseries \sffamily #1: {#2}\par \else \global \@minipagefalse \hb@xt@ \hsize
  {\hfil \box \@tempboxa \hfil }\fi \vskip \abovecaptionskip .
-\c@ContinuedFloat=\count154
+\c@ContinuedFloat=\count153
 Package caption Info: hyperref package is loaded.
 )
-\c@KVtest=\count155
+\c@KVtest=\count154
 \sf@farskip=\skip65
 \sf@captopadj=\dimen139
 \sf@capskip=\skip66
 \sf@nearskip=\skip67
-\c@subfigure=\count156
-\c@subfigure@save=\count157
-\c@lofdepth=\count158
-\c@subtable=\count159
-\c@subtable@save=\count160
-\c@lotdepth=\count161
+\c@subfigure=\count155
+\c@subfigure@save=\count156
+\c@lofdepth=\count157
+\c@subtable=\count158
+\c@subtable@save=\count159
+\c@lotdepth=\count160
 \sf@top=\skip68
 \sf@bottom=\skip69
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -500,11 +490,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count162
+\FV@CodeLineNo=\count161
 \FV@InFile=\read1
-\FV@TabBox=\box30
-\c@FancyVerbLine=\count163
-\FV@StepNumber=\count164
+\FV@TabBox=\box29
+\c@FancyVerbLine=\count162
+\FV@StepNumber=\count163
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/pifont.sty
@@ -521,7 +511,7 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count165
+\c@lips@count=\count164
 )
 (./chapter_template.aux)
 \openout1 = `chapter_template.aux'.
@@ -534,27 +524,21 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
 LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for TU+ptm on input line 78.
-LaTeX Font Info:    No file TUptm.fd. on input line 78.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 78.
 
-
-LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 78.
-
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
 *geometry* driver: auto-detecting
-*geometry* detected driver: xetex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: xetex
+* driver: pdftex
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -585,15 +569,46 @@ LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count165
+\scratchdimen=\dimen140
+\scratchbox=\box30
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen141
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks31
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring ON on input line 78.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count171
 )
 LaTeX Info: Redefining \ref on input line 78.
 LaTeX Info: Redefining \pageref on input line 78.
@@ -603,18 +618,13 @@ LaTeX Info: Redefining \nameref on input line 78.
 \@outlinefile=\write4
 \openout4 = `chapter_template.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 80.
-
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <15> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
 LaTeX Font Info:    Try loading font information for U+msa on input line 80.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -623,85 +633,135 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 80.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
-File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
 
+Overfull \hbox (17.89626pt too wide) in paragraph at lines 89--90
+\OT1/ptm/m/n/10.95 Individual chap-ters don't be-gin with an ab-stract. Ab-stra
+cts must be sub-mit-ted sep-a-rately from the manuscript/chapter.
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 91.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for TU+pcr on input line 91.
-LaTeX Font Info:    No file TUpcr.fd. on input line 91.
+<nato-otan_logo.jpg, id=57, 146.5475pt x 73.27374pt>
+File: nato-otan_logo.jpg Graphic file (type jpg)
+ <use nato-otan_logo.jpg>
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 107.
+(pdftex.def)             Requested size: 72.26953pt x 36.13475pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 107.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 107.
 
 
-LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 91.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 107.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 107.
 
-File: nato-otan_logo.jpg Graphic file (type QTm)
-<use  "nato-otan_logo.jpg" >
-LaTeX Font Info:    Try loading font information for TU+phv on input line 107.
-LaTeX Font Info:    No file TUphv.fd. on input line 107.
+<nato-sto_logo.png, id=58, 48.34114pt x 37.22267pt>
+File: nato-sto_logo.png Graphic file (type png)
+ <use nato-sto_logo.png>
+Package pdftex.def Info: nato-sto_logo.png used on input line 107.
+(pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 107.
 
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-LaTeX Font Warning: Font shape `TU/phv/bx/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 107.
+ <./nato-otan_logo.jpg> <./nato-sto_logo.png>]
+File: nato-sto_logo.png Graphic file (type png)
+ <use nato-sto_logo.png>
+Package pdftex.def Info: nato-sto_logo.png used on input line 108.
+(pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
+ [2]
 
-File: nato-sto_logo.png Graphic file (type QTm)
-<use  "nato-sto_logo.png" > [1
-
-]
-File: nato-sto_logo.png Graphic file (type QTm)
- <use  "nato-sto_logo.png" > [2]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\lowercase' on input line 110.
 
-File: nato-otan_logo.jpg Graphic file (type QTm)
-<use  "nato-otan_logo.jpg" > [3
+
+Overfull \hbox (18.01945pt too wide) in paragraph at lines 116--117
+\OT1/ptm/m/n/10.95 You can cite a ref-er-ence [[]] us-ing the [][]\OT1/pcr/m/n/
+10.95 \cite []\OT1/ptm/m/n/10.95 com-mand in con-junc-tion with [][]\OT1/pcr/m/
+n/10.95 BibTex[]\OT1/ptm/m/n/10.95 . Set [][]\OT1/pcr/m/n/10.95 \bibliographyst
+yle
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 155.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
+File: nato-otan_logo.jpg Graphic file (type jpg)
+
+<use nato-otan_logo.jpg>
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 155.
+(pdftex.def)             Requested size: 65.76462pt x 32.8823pt.
+ [3
 
 ]
+File: nato-sto_logo.png Graphic file (type png)
+ <use nato-sto_logo.png>
+Package pdftex.def Info: nato-sto_logo.png used on input line 181.
+(pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
+ [4]
+File: nato-otan_logo.jpg Graphic file (type jpg)
 
-LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 168.
+<use nato-otan_logo.jpg>
+Package pdftex.def Info: nato-otan_logo.jpg used on input line 215.
+(pdftex.def)             Requested size: 65.76462pt x 32.8823pt.
+ [5]
+<nato-rto_logo.png, id=108, 1018.80624pt x 495.8525pt>
+File: nato-rto_logo.png Graphic file (type png)
+ <use nato-rto_logo.png>
+Package pdftex.def Info: nato-rto_logo.png used on input line 223.
+(pdftex.def)             Requested size: 146.56496pt x 71.33308pt.
 
-File: nato-sto_logo.png Graphic file (type QTm)
-<use  "nato-sto_logo.png" > [4]
-File: nato-otan_logo.jpg Graphic file (type QTm)
- <use  "nato-otan_logo.jpg" > [5]
-File: nato-sto_logo.png Graphic file (type QTm)
-
-<use  "nato-sto_logo.png" > [6]
-File: nato-rto_logo.png Graphic file (type QTm)
- <use  "nato-rto_logo.png" >
 (./chapter_template.bbl)
-File: nato-otan_logo.jpg Graphic file (type QTm)
- <use  "nato-otan_logo.jpg" > [7]
-File: nato_star_black.pdf Graphic file (type QTm)
-
-<use  "nato_star_black.pdf" >
-File: nato-sto_logo.png Graphic file (type QTm)
- <use  "nato-sto_logo.png" > [8
-
-]
+File: nato-sto_logo.png Graphic file (type png)
+ <use nato-sto_logo.png>
+Package pdftex.def Info: nato-sto_logo.png used on input line 239.
+(pdftex.def)             Requested size: 50.58928pt x 38.95374pt.
+ [6 <./nato-rto_logo.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
-
-(./chapter_template.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 239.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 239.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ (./chapter_template.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
+Package rerunfilecheck Info: File `chapter_template.out' has not changed.
+(rerunfilecheck)             Checksum: 051215FEC50AC788FAA3C3356BB845A8;1101.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
- 14300 strings out of 493005
- 204452 string characters out of 6134596
- 425370 words of memory out of 5000000
- 18071 multiletter control sequences out of 15000+600000
- 13007 words of font info for 57 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 50i,15n,54p,416b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 11546 strings out of 492995
+ 170577 string characters out of 6132704
+ 399529 words of memory out of 5000000
+ 14853 multiletter control sequences out of 15000+600000
+ 33464 words of font info for 78 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 50i,15n,54p,419b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on chapter_template.pdf (6 pages, 488386 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on chapter_template.pdf (8 pages).
